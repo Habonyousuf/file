@@ -1,0 +1,118 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+:root{
+   --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: white;
+    --main-color: #0ef;
+}
+
+html{
+    font-size: 89%;
+    overflow-x: hidden;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content h3{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.home-content{
+    animation: home 3s ease-in-out;
+}
+
+@keyframes home{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.home-content h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+
+span{
+    color: var(--main-color);
+}
+
+.home-content h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-content p{
+    font-size: 1.27rem;
+}
+
+.home-img img{
+    width: 35vw;
+    height: 75vh;
+    border-radius: 50%;
+    border: .1rem solid  var(--main-color);
+    animation: image 3s ease-in-out infinite;
+}
+
+@keyframes image{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+
+
